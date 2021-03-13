@@ -16,17 +16,14 @@ class CryptoUnits
           @transNum.times{allRandomTrans << rand(5000.0)}
           
           # divided the transactions in half
-           firstHalf = []
-
           half = @transNum/2 
-          (0...half).each {|ele|firstHalf << allRandomTrans[ele]}
+          first=(0...half).map {|ele|allRandomTrans[ele]}
 
           # now creating the second half
-          secondHalf = []
-          (half..allRandomTrans.length-1).each{|ele|secondHalf << allRandomTrans[ele]}
+          second = (half..allRandomTrans.length-1).map{|ele|allRandomTrans[ele]}
 
           # returning out both both values 
-          return [firstHalf, secondHalf]
+          return [first, second]
      end
 
      # finding a changing interest rate
