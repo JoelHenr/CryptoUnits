@@ -12,8 +12,8 @@ class CryptoUnits
           # new array that stores the random transations
           allRandomTrans = []
           
-          # generated transaction
-          @transNum.times{allRandomTrans << rand(1000.0)}
+          # generated transactions amounts between 5 thousand dollars
+          @transNum.times{allRandomTrans << rand(5000.0)}
           
           # divided the transactions in half
            firstHalf = []
