@@ -64,7 +64,7 @@ p user.interestRate
 newArr = []
 
 # 500 iterations of transiton and storing it in the newArr
-500.times{newArr << user.interstRate}
+500.times{newArr << user.interestRate}
 p newArr
 
 # an average function to see if the assumption is true
