@@ -30,7 +30,7 @@ class CryptoUnits
      end
 
      # finding a changing interest rate
-     def interstRate 
+     def interestRate 
           # easy variables to use
           firstTrans = self.transactions[0].sum
           secondTrans = self.transactions[1].sum
@@ -57,7 +57,7 @@ end
 
 # setting the amount of users to 1 million 
 user = CryptoUnits.new(1000000)
-p user.interstRate
+p user.interestRate
 
 # demand is based soley on dollar amount 
 # testing the law of averages to see if interest rate is approaching zero
