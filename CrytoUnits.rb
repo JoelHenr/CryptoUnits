@@ -55,16 +55,22 @@ class CryptoUnits
      
 end
 
+# setting the amount of users to 1 million 
 user = CryptoUnits.new(1000000)
 p user.interstRate
 
 # demand is based soley on dollar amount 
-# testing the law of averages to see if interest rate is zero
+# testing the law of averages to see if interest rate is approaching zero
 newArr = []
+
+# 500 iterations of transiton and storing it in the newArr
 500.times{newArr << user.interstRate}
 p newArr
 
+# an average function to see if the assumption is true
 def average(arr)
      (arr.sum * 1.0)/arr.length
 end
+
+# printing out the results of the average of all 500 results 
 p average(newArr)
