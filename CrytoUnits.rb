@@ -38,13 +38,13 @@ class CryptoUnits
                diff = firstTrans - secondTrans
 
                # return the interest rate needed to return to zero
-               return (diff * 1.0)/firstTrans
+               return (diff * 1.0)/secondTrans
           elsif firstTrans < secondTrans 
                # subtract the smaller trans
                diff = secondTrans - firstTrans
 
                # return the interest rate needed to return to zero
-               return (diff * 1.0)/secondTrans
+               return (diff * 1.0)/firstTrans
           else
                return 0
           end
